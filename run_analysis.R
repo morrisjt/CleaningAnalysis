@@ -67,5 +67,6 @@ holder<-subsetMeasurementsBigData %>% group_by(subject,activity) %>% summarise_e
 
 holder
 
-library(knitr)
-knit2html("C:/Users/jasomo/Documents/R_Code/CleaningProject/codebook.Rmd")
+write.table(holder, file="tidatdata.txt", row.names=FALSE)
+
+
